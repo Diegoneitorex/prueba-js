@@ -2,69 +2,195 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
 }
 
 header {
     background-color: #333;
-    color: white;
+    color: #fff;
     padding: 20px;
     text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
 }
 
 header nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
 header nav ul li {
-    display: inline;
     margin-right: 20px;
 }
 
 header nav a {
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 
-section {
-    padding: 20px;
+header nav a:hover {
+    color: #ccc;
+}
+
+#inicio {
+    padding: 50px;
+    text-align: center;
+}
+
+#inicio h2 {
+    margin-bottom: 20px;
+}
+
+#inicio p {
+    margin-bottom: 30px;
 }
 
 .carros-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding: 20px;
 }
 
-.carro img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
+.carro {
+    background-color: #f0f0f0;
+    padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#formulario {
-    max-width: 500px;
-    margin: auto;
-}
-
-#formulario label {
-    display: block;
+.imagenes-carros {
     margin-bottom: 10px;
 }
 
-#formulario input,
-#formulario textarea {
+.imagenes-carros img {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
+    height: auto;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
 }
 
-#formulario input[type="submit"] {
-    background-color: #333;
+.imagenes-carros span {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+
+.btn-comprar {
+    background-color: #4CAF50;
     color: white;
-    border: none;
     padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+}
+
+.btn-comprar:hover {
+    background-color: #3e8e41;
+}
+
+#btn-ver-catalogo {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-ver-catalogo:hover {
+    background-color: #444;
+}
+
+#noticias {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#noticias h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+}
+
+article {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+article h3 {
+    font-size: 1.5em;
+    color: #007BFF;
+    margin: 10px;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+}
+
+article p {
+    padding: 10px;
+    color: #555;
+}
+
+#contacto {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contacto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.campo textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
 }
