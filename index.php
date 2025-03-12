@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <?php include 'conexion.php'; ?>
     <header>
         <h1>Automóviles</h1>
         <nav>
@@ -301,7 +300,7 @@
     </section>
 
     <section id="noticias">
-        <h2>Enterate de los vehiculos del futuro</h2>
+        <h2>Enterate de los Vehiculos del Futuro</h2>
         <article>
             <h3>Nuevo Modelo de Carro Eléctrico</h3>
             <div class="galeria" data-descripcion="contenido-electrico">

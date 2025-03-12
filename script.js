@@ -36,3 +36,4 @@ document.querySelectorAll('.prev, .next').forEach(button => {
         cambiarImagen(descripcionId, currentIndex);
     });
 });
+
