@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #007bff;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -37,8 +37,11 @@ header nav a:hover {
 }
 
 #inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 50px;
-    text-align: center;
+    background-image: linear-gradient(to bottom, #f7f7f7, #e7e7e7);
 }
 
 #inicio h2 {
@@ -46,6 +49,8 @@ header nav a:hover {
 }
 
 #inicio p {
+    width: 60%;
+    text-align: center;
     margin-bottom: 30px;
 }
 
@@ -94,16 +99,16 @@ header nav a:hover {
 }
 
 #btn-ver-catalogo {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
     border: none;
-    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
 }
 
 #btn-ver-catalogo:hover {
-    background-color: #444;
+    background-color: #0056b3;
 }
 
 #noticias {
@@ -207,22 +212,14 @@ input[type="submit"]:hover {
 }
 
 .galeria img {
-    width: 200px;
-    height: 150px;
+    width: 100%;
+    height: 450px;
     object-fit: cover;
-    margin: 10px;
+    margin: 0;
 }
 
-@media screen and (max-width: 768px) {
-    .galeria img {
-        width: 150px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .galeria img {
-        width: 100px;
-    }
+.galeria-contenido img {
+    flex: 1;
 }
 
 .prev, .next {
@@ -242,4 +239,12 @@ input[type="submit"]:hover {
 
 .next {
     right: 0;
+}
+
+.galeria-item:not(:first-child) {
+    display: none;
+}
+
+.descripcion-item:not(:first-child) {
+    display: none;
 }
