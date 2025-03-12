@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <?php include 'conexion.php'; ?>
     <header>
         <h1>Automóviles</h1>
         <nav>
@@ -304,7 +304,7 @@
         <h2>Enterate de los vehiculos del futuro</h2>
         <article>
             <h3>Nuevo Modelo de Carro Eléctrico</h3>
-            <div class="galeria">
+            <div class="galeria" data-descripcion="contenido-electrico">
                 <button class="prev">Anterior</button>
                 <div class="galeria-contenido">
                     <img src="Fotos/Alfa Romeo Stelvio Electrico.webp" alt="Alfa Romeo Stelvio Eléctrico">
@@ -313,20 +313,20 @@
                 </div>
                 <button class="next">Siguiente</button>
             </div>
-            <div class="contenido">
+            <div id="contenido-electrico" class="contenido">
                 <p id="descripcion-1">En un mundo cada vez más consciente del impacto ambiental y la necesidad de reducir las
                     emisiones contaminantes, los vehículos eléctricos están emergiendo como la alternativa más prometedora para
                     reemplazar a los vehículos de gasolina.</p>
-                <p id="descripcion-2" style="display:none;">El Audi e-tron GT es un ejemplo de cómo la tecnología eléctrica
+                <p id="descripcion-2" style="display:none;">El Audi e-tron GT es un modelo que representa la fusión perfecta entre tecnología eléctrica avanzada y diseño deportivo, destacándose como un referente en el segmento de los gran turismos eléctricos.
                     puede combinar con el diseño deportivo.</p>
-                <p id="descripcion-3" style="display:none;">El Mercedes EQS es un sedán eléctrico que ofrece un interior
+                <p id="descripcion-3" style="display:none;">El Mercedes-Benz EQS es un sedán eléctrico de lujo que destaca por su interior espacioso y tecnológico, ofreciendo una experiencia de conducción avanzada y sostenible
                     espacioso y tecnológico.</p>
             </div>
         </article>
         
         <article>
             <h3>Carros Deportivos en el Salón del Automóvil</h3>
-            <div class="galeria">
+            <div class="galeria" data-descripcion="contenido-deportivo">
                 <button class="prev">Anterior</button>
                 <div class="galeria-contenido">
                     <img src="Fotos/Koenigsegg Jesko.jpg" alt="Koenigsegg Jesko">
@@ -335,14 +335,14 @@
                 </div>
                 <button class="next">Siguiente</button>
             </div>
-            <div class="contenido">
+            <div id="contenido-deportivo" class="contenido">
                 <p id="descripcion-4">En el mundo de los superdeportivos, la velocidad y la aceleración son los parámetros que definen a los vehículos
                 más extremos. Recientemente, hemos sido testigos de un logro asombroso en el ámbito de la aceleración, con un
                 coche que alcanza de 0-400 km/h en un tiempo récord de solo 20 segundos. Es un placer presentarles el Koenigsegg
                 Jesko, un hiperdeportivo que combina innovación, diseño aerodinámico y un rendimiento excepcional.</p>
-                <p id="descripcion-5" style="display:none;">El Bugatti Chiron Super Sport 300+ es un coche que alcanza
+                <p id="descripcion-5" style="display:none;">El Bugatti Chiron Super Sport 300+ es un superdeportivo que ha establecido récords de velocidad, convirtiéndose en uno de los vehículos más rápidos del mundo logrando alcanzar una velocidad maxima de 305mph 490km/h
                     velocidades increíbles.</p>
-                <p id="descripcion-6" style="display:none;">El Hennessey Venom F5 es conocido por su potencia y diseño agresivo.
+                <p id="descripcion-6" style="display:none;">El Hennessey Venom F5 es un superdeportivo que ha sido diseñado con la ambición de convertirse en el vehículo de producción más rápido del mundo. Aunque su velocidad máxima aún no ha sido oficialmente probada, su potencia y características técnicas lo convierten en un rival digno del Bugatti Chiron Super Sport 300+
                 </p>
             </div>
         </article>
