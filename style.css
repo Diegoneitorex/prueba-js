@@ -10,6 +10,10 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
+    background-image: url(Fotos/jac-toyota-.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 header h1 {
@@ -27,7 +31,7 @@ header nav ul {
 header nav ul li {
     list-style: none;
     margin-right: 20px;
-    font-size: 18px;
+    font-size: 19px;
 }
 
 header nav a {
@@ -105,7 +109,7 @@ header nav a:hover {
     padding: 10px 20px;
     font-size: 1em;
     color: white;
-    background-color: #007bff;
+    background-color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -207,20 +211,30 @@ article p {
     display: none;
 }
 
-.flexbox {
+footer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #007bff;
+    flex-wrap: wrap;
+    background-color: black;
     font-size: 18px;
-    font-family: arial, sans-serif;;
+    font-family: arial, sans-serif;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    margin-bottom: 10px;
 }
 
 .redes-sociales {
     display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .redes-sociales a {
@@ -228,11 +242,34 @@ article p {
 }
 
 .redes-sociales img {
-    width: 38px;
-    height: 38px;
+    width: 22px;
+    height: 22px;
 }
 
 .redes-sociales a:hover {
     transform: scale(1.1);
     transition: transform 0.2s ease-in-out;
 }
+
+#contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.columna {
+    width: 20%;
+    padding: 20px; 
+    color: white;
+}
+
+footer li a:hover {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
