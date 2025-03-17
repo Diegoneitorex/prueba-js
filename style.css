@@ -13,18 +13,21 @@ header {
 }
 
 header h1 {
-    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    color: #fff;
 }
 
 header nav ul {
-    list-style: none;
     padding: 0;
     display: flex;
     justify-content: space-around;
 }
 
 header nav ul li {
+    list-style: none;
     margin-right: 20px;
+    font-size: 18px;
 }
 
 header nav a {
@@ -33,25 +36,25 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #ccc;
+    color: red;
 }
 
 #inicio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-    background-image: linear-gradient(to bottom, #f7f7f7, #e7e7e7);
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #inicio h2 {
-    margin-bottom: 20px;
+    font-size: 2em;
+    color: #343a40;
 }
 
 #inicio p {
-    width: 60%;
-    text-align: center;
-    margin-bottom: 30px;
+    font-size: 1.2em;
+    color: #495057;
 }
 
 .carros-grid {
@@ -99,12 +102,14 @@ header nav a:hover {
 }
 
 #btn-ver-catalogo {
-    background-color: #007bff;
-    color: white;
-    border: none;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 #btn-ver-catalogo:hover {
@@ -144,59 +149,6 @@ article img {
 article p {
     padding: 10px;
     color: #555;
-}
-
-#contacto {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#contacto h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#formulario {
-    display: flex;
-    flex-direction: column;
-}
-
-.campo {
-    margin-bottom: 15px;
-}
-
-.campo label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.campo input, .campo textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.campo textarea {
-    height: 100px;
-    resize: vertical;
-}
-
-input[type="submit"] {
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #0056b3;
 }
 
 .galeria {
@@ -253,4 +205,34 @@ input[type="submit"]:hover {
 
 .descripcion-item:not(:first-child) {
     display: none;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #007bff;
+    font-size: 18px;
+    font-family: arial, sans-serif;;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.redes-sociales a {
+    margin: 0 10px;
+}
+
+.redes-sociales img {
+    width: 38px;
+    height: 38px;
+}
+
+.redes-sociales a:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
 }
