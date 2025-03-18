@@ -219,6 +219,12 @@ footer {
     font-family: arial, sans-serif;
 }
 
+.separador {
+    border-left: 1px solid #ccc;
+    height: 400px;
+    margin: 0 10px;
+}
+
 footer h2 {
     margin-bottom: 10px;
 }
@@ -235,6 +241,9 @@ footer li {
 .redes-sociales {
     display: flex;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .redes-sociales a {
@@ -261,6 +270,9 @@ footer li {
     width: 20%;
     padding: 20px; 
     color: white;
+    font-size: 15px;
+    margin: 0 2px;
+    text-align: center;
 }
 
 footer li a:hover {
