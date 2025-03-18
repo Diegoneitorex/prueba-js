@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Vehículo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="estilo">
+    <div class="contenedor">
+        <h1 class="titulo">Confirmación de Compra</h1>
+
+        <div id="carro-seleccionado" class="detalle-vehiculo"></div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const modelo = urlParams.get('modelo');
+        const precio = urlParams.get('precio');
+
+        const contenedor = document.getElementById('carro-seleccionado');
+        contenedor.innerHTML = `
+            <div class="vehiculo">
+                <h2 class="modelo">${modelo}</h2>
+                <div class="precio">
+                    <span class="etiqueta">Precio:</span>
+                    <span class="valor">$${precio}</span>
+                </div>
+                <button class="boton-compra" onclick="finalizarCompra()">Finalizar Compra</button>
+            </div>`;
+
+        function finalizarCompra() {
+            alert('¡Gracias por tu compra!');
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+
+</html>
